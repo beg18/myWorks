@@ -1,0 +1,130 @@
+.portfolio-item {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+
+}
+.portfolio-item__image {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+    min-height: 190px;
+    background: url(../img/placeholders/project_placeholder.jpg) no-repeat center;
+    background-size: cover;
+     min-height: 190px;
+
+    @media (min-width: 768px){
+        min-height: 150px;
+        height: 150px;
+    }
+    @media (min-width: 992px){
+        height: 200px;
+    }
+    @media (min-width: 1200px){
+        margin-bottom: 16px;
+        height: 250px;
+    }
+}
+.portfolio-item__image__hover {
+    display: block;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 60px;
+    background-color: rgba(0, 82, 194, .9);
+    text-align: center;
+    font-size: 26px;
+    color: #FFFFFF;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    .fa {
+        font-size: 64px;
+        margin-bottom: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+        @media (min-width: 768px){
+            font-size: 50px;
+        }
+
+        @media (min-width: 1200px){
+            font-size: 64px;
+            position: static;
+
+            -webkit-transform: translate(0%, 0%);
+               -moz-transform: translate(0%, 0%);
+                -ms-transform: translate(0%, 0%);
+                 -o-transform: translate(0%, 0%);
+                    transform: translate(0%, 0%);
+        }
+    }
+
+    span {
+        display: none;
+
+        @media (min-width: 1200px){
+    			display: inline-block;
+        }
+    }
+
+}
+.portfolio-item__image:hover .portfolio-item__image__hover {
+    display: block;
+    top: 0%;
+}
+
+.portfolio-item__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @media (min-width: 992px){
+        font-size: 24px;
+
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+
+        &:hover, &:focus, &:active {
+            color: @blueHeading;
+            text-decoration: none;
+        }
+        @media (min-width: 1200px){
+             border-bottom: 1px dotted #000000;
+
+
+          &:hover, &:focus, &:active {
+            border-bottom: 1px dotted @blueHeading;
+
+        }
+        }
+
+    }
+
+}
+.portfolio-item__description {
+    font-size: 14px;
+    line-height: 1.42;
+
+    @media (min-width: 992px){
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

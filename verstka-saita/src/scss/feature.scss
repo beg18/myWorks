@@ -1,0 +1,48 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.feature {
+  background-color: #ffffff;
+  .feature__content {
+    display: flex;
+    padding: 60px;
+  }
+  .feature__tile {
+    @include flex-center;
+    width: 23%;
+    & .tile__icon {
+      @include flex-center(row);
+      margin-bottom: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #ffffff;
+
+      &--yellow {
+        background-color: $yellow;
+      }
+      &--blue {
+        background-color: $blue;
+      }
+      &--grey {
+        background-color: $grey;
+      }
+      &--orange {
+        background-color: $orange;
+      }
+    }
+    & .tile__title {
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px;
+    }
+    & .tile__text {
+    font-size: 16px;
+    color: #7E7E7E;
+    line-height: 1.375;
+    text-align: center;
+    }
+  }
+
+}

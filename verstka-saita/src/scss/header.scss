@@ -1,0 +1,27 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$font-color:#FFFFFF;
+
+.header {
+  @include flex-center;
+  flex: 1 0 auto;
+  color: $font-color;
+  background: url(img/header_bg.jpg) no-repeat;
+  background-size: cover;
+
+  .header__title {
+    font-size: 72px;
+    color: $font-color;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .header__subtitle {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    font-family: "Georgia";
+    color: $font-color;
+    line-height: 1.469;
+  }
+}

@@ -1,0 +1,17 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$font-color:#FFFFFF;
+
+.auth {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0 0 $auth-height;
+
+  .auth__link {
+    color: $font-color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

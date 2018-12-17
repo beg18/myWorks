@@ -1,0 +1,152 @@
+.navigation {
+     background-color: #38383A;
+     font-size: @base-font;
+     color: #FFFFFF;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     box-shadow: 0px 5px 10px 0px rgba(42, 73, 109, 1);
+     position: relative;
+     z-index: 2;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+
+
+       @media screen and (min-width: 992px){
+           background-color: #38383A;
+           /*padding: 23px 0;»—œ–¿¬À≈Õ»≈*/
+           padding-top: 23px;
+           padding-bottom: 23px;
+           position: static;
+       }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: none;
+        justify-content: space-between;
+        background-color: #35577D;
+
+        @media screen and (min-width: 992px){
+            display: flex;
+            background-color: transparent;
+        }
+    }
+    li {
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #466a92;
+
+        &.active {
+             color: #FBBC00;
+        }
+
+        @media screen and (min-width: 992px){
+            border-bottom: 0;
+            padding: 0;
+        }
+
+    }
+    a {
+        display: block;
+        padding: 22px 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &.active, &:hover {
+            color: #FBBC00;
+        }
+
+        @media screen and (min-width: 992px){
+            display: inline;
+            padding: 0;
+        }
+
+    }
+
+}
+.navigation__toggle-button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 23px 15px;
+    background-color: #38383A;
+
+    @media screen and (min-width: 992px){
+        display: none;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 15px;
+        width: 25px;
+        height: 20px;
+        background: url(../img/icons/navigation-icon.png) no-repeat 0 0;
+    }
+    &:focus, &.active {
+         background-color: #16385F;
+    }
+
+}
+
+.navigation-toggle-button--active {
+    background-color: #16385F;
+}
+
+.container--mobile--no-padding {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media screen and (min-width: 992px){
+        width: 970px;
+        /*padding: 0 15px;»—œ–¿¬À≈Õ»≈*/
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,753 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+a {
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-size: 1.6rem;
+  /* 10px * 1.6 = 16px */
+  font-family: 'Noto Sans';
+}
+p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.714;
+}
+.subtitle__text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.block {
+  background: #FFDB4C;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.line {
+  border-top: 1px solid  #EAEFF5;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.heading {
+  font-size: 28px;
+  color: #333333;
+  font-weight: 700;
+  line-height: 1.357;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.heading--center {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 38px;
+    line-height: 1.263;
+    margin-bottom: 40px;
+  }
+}
+.heading--smaller-margin {
+  margin-bottom: 20px;
+}
+.heading--number:before {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffc80a;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  content: "0";
+  padding-top: 3px;
+  padding-left: 8px;
+  position: absolute;
+}
+.heading--number-1:before {
+  top: -40px;
+  left: -13px;
+  content: "1";
+}
+@media (min-width: 1200px) {
+  .heading--number-1:before {
+    top: -30px;
+    left: -32px;
+  }
+}
+.heading--number-2:before {
+  top: -40px;
+  left: -13px;
+  content: "2";
+}
+@media (min-width: 1200px) {
+  .heading--number-2:before {
+    top: -30px;
+    left: -32px;
+  }
+}
+.section {
+  /*padding: 60px 0 50px 0;�����������*/
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.section--xs-p-t-70 {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .section--xs-p-t-70 {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .section--xs-p-t-70 {
+    padding-top: 80px;
+  }
+}
+.section--xs-p-t-70--p-b-0 {
+  padding-bottom: 0;
+}
+.package {
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 47px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.package.last {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .package {
+    margin-bottom: 0;
+  }
+}
+.package__type {
+  font-size: 12px;
+  color: #242526;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.package__price {
+  font-size: 48px;
+  color: #242526;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.package__price:after {
+  content: "c";
+  font-family: 'als_rublregular';
+}
+.package__period {
+  font-size: 12px;
+  color: #242526;
+  line-height: 2.5;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.package__benifits {
+  font-size: 14px;
+  color: #242526;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.package__benifits ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.package__benifits ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.package__benifits ul li:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/ok-icon.png) no-repeat 0 10px;
+}
+.button {
+  display: inline-block;
+  border-radius: 23px;
+  background-color: #252525;
+  box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 15px 44px;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FFC80A;
+  box-shadow: 0px 8px 16px 0px rgba(233, 222, 185, 0.8);
+}
+.button--orange {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FFC80A;
+  box-shadow: 0px 8px 16px 0px rgba(233, 222, 185, 0.8);
+  padding: 15px 30px;
+}
+.button--orange:hover,
+.button--orange:active,
+.button--orange:focus {
+  color: #000000;
+  background-color: rgba(255, 200, 10, 0.8);
+}
+.logo {
+  text-align: center;
+  /*padding: 80px 0 40px 0;�����������*/
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .logo {
+    padding-top: 30px;
+  }
+}
+.logo__name {
+  font-size: 33px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 5.5px;
+}
+@media screen and (min-width: 768px) {
+  .logo__name {
+    font-size: 38px;
+    letter-spacing: 7px;
+  }
+}
+.logo__slogan {
+  font-size: 14px;
+  color: #A1BBD9;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+@media screen and (min-width: 768px) {
+  .logo__slogan {
+    font-size: 16px;
+    letter-spacing: 9px;
+  }
+}
+.navigation {
+  background-color: #38383A;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 0px 5px 10px 0px #2a496d;
+  position: relative;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 992px) {
+  .navigation {
+    background-color: #38383A;
+    /*padding: 23px 0;�����������*/
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: static;
+  }
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #35577D;
+}
+@media screen and (min-width: 992px) {
+  .navigation ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+  }
+}
+.navigation li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #466a92;
+}
+.navigation li.active {
+  color: #FBBC00;
+}
+@media screen and (min-width: 992px) {
+  .navigation li {
+    border-bottom: 0;
+    padding: 0;
+  }
+}
+.navigation a {
+  display: block;
+  padding: 22px 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navigation a.active,
+.navigation a:hover {
+  color: #FBBC00;
+}
+@media screen and (min-width: 992px) {
+  .navigation a {
+    display: inline;
+    padding: 0;
+  }
+}
+.navigation__toggle-button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 23px 15px;
+  background-color: #38383A;
+}
+@media screen and (min-width: 992px) {
+  .navigation__toggle-button {
+    display: none;
+  }
+}
+.navigation__toggle-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  width: 25px;
+  height: 20px;
+  background: url(../img/icons/navigation-icon.png) no-repeat 0 0;
+}
+.navigation__toggle-button:focus,
+.navigation__toggle-button.active {
+  background-color: #16385F;
+}
+.navigation-toggle-button--active {
+  background-color: #16385F;
+}
+.container--mobile--no-padding {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 992px) {
+  .container--mobile--no-padding {
+    width: 970px;
+    /*padding: 0 15px;�����������*/
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--mobile--no-padding {
+    width: 1170px;
+  }
+}
+.slider {
+  background-color: #225576;
+  background: url(../img/bg/slider-bg.jpg) no-repeat center;
+  background-size: cover;
+  /*padding: 100px 0 127px 0;�����������*/
+  padding-top: 100PX;
+  padding-bottom: 127PX;
+  box-shadow: 0px 3px 25px 0px #688ab3;
+}
+.slider__title {
+  font-size: 28px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .slider__title {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+  }
+}
+.slider__slogan {
+  font-size: 18px;
+  font-family: "Noto Serif";
+  color: #CDDFE0;
+  line-height: 28px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .slider__slogan {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/
+.top-slider-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.top-slider-theme .owl-controls .owl-buttons div {
+  display: none;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  margin-top: -32px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .top-slider-theme .owl-controls .owl-buttons div {
+    display: block;
+  }
+}
+.owl-prev {
+  left: 0;
+  background: url(../img/icons/arrow-left.png);
+}
+.owl-next {
+  right: 0;
+  background: url(../img/icons/arrow-right.png);
+}
+/* Styling Pagination*/
+.top-slider-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline
+  /*IE7 life-saver */
+}
+.top-slider-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  border-radius: 20px;
+  background: #FFFFFF ;
+}
+@media (min-width: 992px) {
+  .top-slider-theme .owl-controls .owl-page span {
+    display: none;
+  }
+}
+.owl-pagination {
+  position: absolute;
+  width: 100%;
+  bottom: -110px;
+}
+.top-slider-theme .owl-controls .owl-page.active span,
+.top-slider-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* If PaginationNumbers is true */
+.top-slider-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  /*padding: 2px 10px;�����������*/
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+.benifit-block {
+  padding-bottom: 38px;
+}
+@media (min-width: 768px) {
+  .benifit-block:last-child {
+    padding-bottom: 0;
+  }
+  .benifit-block:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+}
+.benifit-block__img {
+  width: 100%;
+  height: 130px;
+  display: table;
+  text-align: center;
+  /*margin: 0 0 15px 0;*/
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benifit-block__img {
+    margin-bottom: 24px;
+  }
+}
+.benifit-block__img-table-cell {
+  display: table-cell;
+}
+.benifit-block__img img {
+  display: inline-block;
+}
+.benifit-block__header {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 700;
+  line-height: 1.333;
+  /*margin: 0 0 15px 0;*/
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benifit-block__header {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+.benifit-block__text {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.714;
+}
+.service-description__content {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.714;
+  text-align: left;
+}
+.service-description__content p {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.service-description__button-arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icons/arrow-orange.png) no-repeat left top;
+}
+.service-description__img--xs-m-b-20 {
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .service-description__img--xs-m-b-20 {
+    margin-bottom: 0;
+  }
+}
+footer {
+  background-color: #252525;
+  color: #6C6C6C;
+}
+footer p {
+  font-size: 14px;
+  color: #6C6C6C;
+  line-height: 1.571;
+  text-align: left;
+}
+.footer__title {
+  font-size: 12px;
+  color: #F7F8F9;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 4.767;
+}
+.footer__nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 57px;
+  font-size: 14px;
+  color: #6c6c6c;
+  line-height: 20px;
+}
+.footer__nav li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.footer__nav a {
+  color: #6C6C6C;
+  text-decoration: none;
+}
+.footer__nav a:hover {
+  color: #ffc80a;
+}
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table /* 2 */;
+}
+.clearfix:after {
+  clear: both;
+}
+/*# sourceMappingURL=main.css.map */
+.block {
+  background-color: #FFFF00;
+  color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center;
+}
+.line {
+  border-top: 1px solid #808080;
+}
+/*# sourceMappingURL=main.css.map */

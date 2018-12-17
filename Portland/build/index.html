@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Favicons for all devices -->
+    <link rel="apple-touch-icon" sizes="57x57" href="i/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="i/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="i/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="i/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="i/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="i/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="i/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="i/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="i/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="i/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="i/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="i/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="i/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="i/favicons/manifest.json">
+    <link rel="mask-icon" href="i/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="i/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+      Project Title
+    </title>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <header id="header">
+      <div class="menu__top-main">
+        <nav hidden>
+          <div class="nav-header">
+            <div class="menu__top-left">
+              <a href="javascript:void(0)" class="menu__top-left-btn" onclick="myFunction()"><img src="i/icons/icon-menu.png" alt=""></a>
+            </div>
+            <div id="menu__bottom" class="menu__bottom-hide">
+              <a href="#" class="menu__bottom-button">Top Sales</a>
+              <a href="#" class="menu__bottom-button">Brand Focus</a>
+              <a href="#" class="menu__bottom-button">Hi-tech</a>
+              <a href="#" class="menu__bottom-button">Best Sellers</a>
+              <a href="#" class="menu__bottom-button">Projects</a>
+            </div>
+            <a href="#" class="brand">
+            <img src="i/logo.png" alt="" />
+            </a>
+            <button class="toggle-bar">
+              <span class="fa fa-bars">
+              </span>
+            </button>
+          </div>
+          <ul class="menu">
+            <li class="scrollspy active">
+              <a href="#home">Home</a>
+            </li>
+            <li class="scrollspy">
+              <a href="#devices">Devices</a>
+            </li>
+            <li class="scrollspy">
+              <a href="#delivery">Delivery &amp; Payment</a>
+            </li>
+            <li class="scrollspy">
+              <a href="#guarantee">Guarantee</a>
+            </li>
+            <li class="scrollspy">
+              <a href="#about">About Us</a>
+            </li>
+          </ul>
+          <ul class="menu__top-right" hidden>
+            <li>
+              <a href="#" class="menu__top-right-link">
+              <img class="menu__top-right" src="i/icons/icon-cart.png" alt="">
+              <span class="menu__top-right-span">Cart</span>
+              <span class="menu__top-right-bage">0</span>
+              </a>
+            </li>
+            <li>
+              <button class="button">
+                Sign In
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--/.menu__top-main-->
+      <div class="wrapper">
+        <div class="menu__bottom">
+          <div class="menu__bottom-bar">
+            <a href="#" class="menu__bottom-home">Home</a>
+            <a href="#" class="menu__bottom-link">Top Sales</a>
+            <a href="#" class="menu__bottom-link">Brand Focus</a>
+            <a href="#" class="menu__bottom-link">Hi-tech</a>
+            <a href="#" class="menu__bottom-link">Best Sellers</a>
+            <a href="#" class="menu__bottom-link">Projects</a>
+            <a href="javascript:void(0)" class="menu__bottom-icon" onclick="myFunction()"><img src="i/icons/icon-menu.png" alt=""></a>
+          </div>
+          <div id="menu__bottom" class="menu__bottom-hide">
+            <a href="#" class="menu__bottom-button">Top Sales</a>
+            <a href="#" class="menu__bottom-button">Brand Focus</a>
+            <a href="#" class="menu__bottom-button">Hi-tech</a>
+            <a href="#" class="menu__bottom-button">Best Sellers</a>
+            <a href="#" class="menu__bottom-button">Projects</a>
+          </div>
+          <div class="menu__bottom-right">
+            <div class="menu__bottom-item">
+              <a href="#" class="menu__bottom-right-link">Support</a>
+            </div>
+            <form class="menu__bottom-form">
+              <a href="#" class="menu__bottom-right-link">
+              <span class="fa fa-search link--search"></span>
+              <input type="text" class="menu__bottom-right-input" placeholder="I &rsquo; m looking for ...">
+              </a>
+            </form>
+            <!--end block menu__bottom-right -->
+          </div>
+          <!--end block menu__bottom -->
+        </div>
+      </div>
+    </header>
+    <!-- End header-->
+    <section id="home" class="section">
+      <div class="wrapper">
+        <div class="banner__wrap">
+          <div class="banner__content">
+            <h1 class="banner__title">
+              iPhone 6 32Gb
+              <br>
+              Black
+            </h1>
+            <!--end block banner__title -->
+            <div class="banner__text">
+              <p>
+                At first, for some time, I was not able to answer him one word; but as he had taken me
+                in his arms I held fast by him, or I should have fallen to the ground.
+              </p>
+            </div>
+            <!--end block banner__text -->
+            <a href="#js-login-modal" class="banner__btn js-show-modal">Buy Now</a>
+          </div>
+          <!--end block banner__content -->
+          <div class="banner__empty">
+            <div class="triangle">
+            </div>
+            <!--end block triangle -->
+          </div>
+          <!--end block banner__empty -->
+        </div>
+        <!--end block banner__wrap -->
+      </div>
+      <!--end block wrapper -->
+    </section>
+    <!-- End home-->
+    <section id="sort">
+      <div class="wrapper">
+        <form action="#" method="post" class="sort__form wow zoomIn" data-wow-delay=".8s">
+          <div class="sort__select-left">
+            <p class="select__value">
+              Sort By:
+            </p>
+            <select name="" size="1" class="select__list">
+              <option value="Best Match" selected="selected" class="select__item">
+                Best Match
+              </option>
+              <option value="item1" class="select__item">
+                item1
+              </option>
+              <option value="item2" class="select__item">
+                item2
+              </option>
+              <option value="item3" class="select__item">
+                item3
+              </option>
+            </select>
+          </div>
+          <!--/.sort__select-left-->
+          <div class="sort__select-center">
+            <div class="select__center-keywords">
+              <label class="keywords__label" for="keywords">
+                Keywords
+              </label>
+              <input name="keywords" class="keywords__input" type="text" id="keywords" placeholder="Tablet">
+            </div>
+            <div class="select__center-price">
+              <label for="price" class="price__label">
+                price
+              </label>
+              <input name="price" class="price__input" type="text" id="price" placeholder="10">
+              <span>
+                <b>
+                  -
+                </b>
+              </span>
+              <input name="price" class="price__input" type="text" placeholder="1000">
+            </div>
+            <div class="select__center-freeShipping">
+              <div class="freeShipping__img">
+                <img src="i/icons/icon-check.png" class="freeShipping__img-icon" alt="">
+              </div>
+              <div class="freeShipping__text">
+                Free Shipping
+              </div>
+            </div>
+          </div>
+          <!--/.sort__select-center-->
+          <div class="sort__select-right">
+            <p class="select__value">
+              Ship to:
+            </p>
+            <select name="" size="1" class="select__list">
+              <option value="USA" selected="selected" class="select__item">
+                USA
+              </option>
+              <option value="item1" class="select__item">
+                item1
+              </option>
+              <option value="item2" class="select__item">
+                item2
+              </option>
+              <option value="item3" class="select__item">
+                item3
+              </option>
+            </select>
+          </div>
+          <!--/.sort__select-right-->
+        </form>
+      </div>
+    </section>
+    <!-- End section sort-->
+    <section id="devices" class="section">
+      <div class="wrapper">
+        <div class="products__wrap">
+          <div class="filters">
+            <div class="filters__card wow fadeInLeft" data-wow-delay=".2s">
+              <div class="card__item">
+                <a href="#item-1" class="card-title js-card-title">Top Sales</a>
+                <ul class="card-content js-card-content" id="item-1">
+                  <li class="card-content-item">
+                    Cell Phones
+                  </li>
+                  <li class="card-content-item">
+                    Cameras
+                  </li>
+                  <li class="card-content-item">
+                    Computers
+                  </li>
+                  <li class="card-content-item">
+                    Tv, Audio
+                  </li>
+                  <li class="card-content-item">
+                    Video Games
+                  </li>
+                </ul>
+              </div>
+              <div class="card__item">
+                <a href="#item-2" class="card-title js-card-title">Brand Focus</a>
+                <ul class="card-content js-card-content" id="item-2">
+                  <li class="card-content-item">
+                    Cell Phones
+                  </li>
+                  <li class="card-content-item">
+                    Cameras
+                  </li>
+                  <li class="card-content-item">
+                    Computers
+                  </li>
+                  <li class="card-content-item">
+                    Tv, Audio
+                  </li>
+                  <li class="card-content-item">
+                    Video Games
+                  </li>
+                </ul>
+              </div>
+              <div class="card__item">
+                <a href="#item-3" class="card-title js-card-title">Hi-Tech</a>
+                <ul class="card-content js-card-content" id="item-3">
+                  <li class="card-content-item">
+                    Cell Phones
+                  </li>
+                  <li class="card-content-item">
+                    Cameras
+                  </li>
+                  <li class="card-content-item">
+                    Computers
+                  </li>
+                  <li class="card-content-item">
+                    Tv, Audio
+                  </li>
+                  <li class="card-content-item">
+                    Video Games
+                  </li>
+                </ul>
+              </div>
+              <div class="card__item">
+                <a href="#item-4" class="card-title js-card-title">Home</a>
+                <ul class="card-content js-card-content" id="item-4">
+                  <li class="card-content-item">
+                    Cell Phones
+                  </li>
+                  <li class="card-content-item">
+                    Cameras
+                  </li>
+                  <li class="card-content-item">
+                    Computers
+                  </li>
+                  <li class="card-content-item">
+                    Tv, Audio
+                  </li>
+                  <li class="card-content-item">
+                    Video Games
+                  </li>
+                </ul>
+              </div>
+              <div class="card__item">
+                <a href="#item-5" class="card-title js-card-title">Sale</a>
+                <ul class="card-content js-card-content" id="item-5">
+                  <li class="card-content-item">
+                    Cell Phones
+                  </li>
+                  <li class="card-content-item">
+                    Cameras
+                  </li>
+                  <li class="card-content-item">
+                    Computers
+                  </li>
+                  <li class="card-content-item">
+                    Tv, Audio
+                  </li>
+                  <li class="card-content-item">
+                    Video Games
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/.filters__card-1-->
+            <div class="filters__card wow fadeInLeft" data-wow-delay=".4s">
+              <div class="card__item">
+                <form class="availabel" id="availabel" action="#" method="POST">
+                  <header class="availabel__header">
+                    <h3 class="availabel__title">
+                      Availabel
+                    </h3>
+                  </header>
+                  <div class="availabel__content">
+                    <div class="availabel-group">
+                      <input id="js-availabel-input" class="availabel__input" type="radio" checked="checked">
+                      <label class="availabel__label" for="js-availabel-input">
+                        In Storage
+                      </label>
+                      <span class="availabel__label-span">
+                        45
+                      </span>
+                    </div>
+                    <div class="availabel-group">
+                      <input id="js-availabel-input2" class="availabel__input" name="availabel-input"type="radio">
+                      <label class="availabel__label" for="js-availabel-input2">
+                        In Online-Shop
+                      </label>
+                      <span class="availabel__label-span">
+                        12
+                      </span>
+                    </div>
+                  </div>
+                  <!--/.availabel__content-1-->
+                  <header class="availabel__header">
+                    <h3 class="availabel__title">
+                      Brands
+                      <a href="#" class="availabel__title-span">All</a>
+                    </h3>
+                  </header>
+                  <div class="availabel__content">
+                    <div class="availabel-group">
+                      <input id="js-availabel-input3" class="availabel__input" type="checkbox" checked="checked">
+                      <label class="availabel__label" for="js-availabel-input3">
+                        Apple
+                      </label>
+                      <span class="availabel__label-span">
+                        32
+                      </span>
+                    </div>
+                    <div class="availabel-group">
+                      <input id="js-availabel-input4" class="availabel__input" name="availabel-input" type="checkbox">
+                      <label class="availabel__label" for="js-availabel-input4">
+                        Jbl
+                      </label>
+                      <span class="availabel__label-span">
+                        14
+                      </span>
+                    </div>
+                    <div class="availabel-group">
+                      <input id="js-availabel-input5" class="availabel__input" type="checkbox" checked="checked">
+                      <label class="availabel__label" for="js-availabel-input5">
+                        Bose
+                      </label>
+                      <span class="availabel__label-span">
+                        3
+                      </span>
+                    </div>
+                    <div class="availabel-group">
+                      <input id="js-availabel-input6" class="availabel__input" name="availabel-input" type="checkbox">
+                      <label class="availabel__label" for="js-availabel-input6">
+                        Nest
+                      </label>
+                      <span class="availabel__label-span">
+                        5
+                      </span>
+                    </div>
+                  </div>
+                  <!--/.availabel__content-2-->
+                </form>
+              </div>
+            </div>
+            <!--/.filters__card-2-->
+            <div class="filters__card wow fadeInLeft" data-wow-delay=".6s">
+              <form class="availabel" id="js-availabel" action="#" method="POST">
+                <header class="availabel__header">
+                  <h3 class="availabel__title">
+                    Condition
+                    <a href="#" class="availabel__title-span">See All</a>
+                  </h3>
+                </header>
+                <div class="availabel__content">
+                  <div class="availabel-group">
+                    <input id="js-availabel-check" class="availabel__input" type="checkbox" checked="checked">
+                    <label class="availabel__label" for="js-availabel-check">
+                      New
+                    </label>
+                  </div>
+                  <div class="availabel-group">
+                    <input id="js-availabel-check2" class="availabel__input" name="availabel-input" type="checkbox">
+                    <label class="availabel__label" for="js-availabel-check2">
+                      Manufacturer Refurbished
+                    </label>
+                  </div>
+                  <div class="availabel-group">
+                    <input id="js-availabel-check3" class="availabel__input" type="checkbox">
+                    <label class="availabel__label" for="js-availabel-check3">
+                      Seller Refurbished
+                    </label>
+                  </div>
+                  <div class="availabel-group">
+                    <input id="js-availabel-check4" class="availabel__input" name="availabel-input" type="checkbox"
+                    checked="checked">
+                    <label class="availabel__label" for="js-availabel-check4">
+                      Used
+                    </label>
+                  </div>
+                  <div class="availabel-group">
+                    <input id="js-availabel-check5" class="availabel__input" type="checkbox">
+                    <label class="availabel__label" for="js-availabel-check5">
+                      For Parts or not Working
+                    </label>
+                  </div>
+                </div>
+                <!--/.availabel__content-3-->
+              </form>
+            </div>
+            <!--/.filters__card-3-->
+            <div class="filters__card wow fadeInLeft" data-wow-delay=".8s">
+              <form class="availabel" id="js-availabel" action="#" method="POST">
+                <header class="availabel__header">
+                  <h3 class="availabel__title">
+                    Delivery Options
+                  </h3>
+                </header>
+                <div class="availabel__content">
+                  <div class="availabel-group">
+                    <input id="js-availabel-radio" class="availabel__input" type="radio" checked="checked">
+                    <label class="availabel__label-radio" for="js-availabel-radio">
+                      Free
+                    </label>
+                    <input id="js-availabel-radio" class="availabel__input" type="radio">
+                    <label class="availabel__label-radio" for="js-availabel-radio">
+                      $4.99
+                    </label>
+                  </div>
+                </div>
+                <!--/.availabel__content-4-->
+              </form>
+            </div>
+            <!--/.filters__card-4-->
+          </div>
+          <div class="products">
+            <div class="products__row">
+              <div class="products__item wow fadeInLeft" data-wow-delay=".2s">
+                <div class="products__item-img">
+                  <img src="i/good-img1.jpg" alt="product1">
+                </div>
+                <div class="products__item-name">
+                  Apple TV 32GB
+                </div>
+                <div class="products__item-feature">
+                  Black
+                </div>
+                <div class="products__item-price">
+                  $49.99
+                </div>
+              </div>
+              <div class="products__item wow zoomIn" data-wow-delay=".4s">
+                <div class="products__item-img">
+                  <img src="i/good-img2.jpg" alt="product2">
+                </div>
+                <div class="products__item-name">
+                  Pebble Time
+                </div>
+                <div class="products__item-feature">
+                  Red
+                </div>
+                <div class="products__item-price">
+                  $29.99
+                </div>
+              </div>
+              <div class="products__item wow fadeInRight" data-wow-delay=".8s">
+                <div class="products__item-img">
+                  <img src="i/good-img3.jpg" alt="product3">
+                </div>
+                <div class="products__item-name">
+                  Zendure 4-Port USB
+                </div>
+                <div class="products__item-feature">
+                  White
+                </div>
+                <div class="products__item-price">
+                  $49.99
+                </div>
+              </div>
+            </div>
+            <!--/.products__row-1 -->
+            <div class="products__row">
+              <div class="products__item wow fadeInLeft" data-wow-delay=".2s">
+                <div class="products__item-img">
+                  <img src="i/good-img4.jpg" alt="product4">
+                </div>
+                <div class="products__item-name">
+                  Withings Smart Body Analyzer ws-50
+                </div>
+                <div class="products__item-feature">
+                  Black
+                </div>
+                <div class="products__item-price">
+                  $49.99
+                </div>
+              </div>
+              <div class="products__item products__item-big wow fadeInRight" data-wow-delay=".4s">
+                <div class="products__item-big-img">
+                  <img src="i/good-img5.jpg" alt="product5">
+                </div>
+                <div class="products__item-big-content">
+                  <div class="products__item-big-text">
+                    <div class="products__item-big-name">
+                      JBL Charge 2+
+                    </div>
+                    <div class="products__item-big-feature">
+                      Black
+                    </div>
+                    <div class="products__item-big-price">
+                      $39.99
+                    </div>
+                  </div>
+                  <div class="products__item-big-btns">
+                    <button class="products__item-big-btn--left">
+                      16Gb
+                    </button>
+                    <button class="products__item-big-btn--right">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.products__row-2 -->
+            <div class="products__row">
+              <div class="products__item wow fadeInLeft" data-wow-delay=".8s">
+                <div class="products__item-img">
+                  <img src="i/good-img6.jpg" alt="product6">
+                </div>
+                <div class="products__item-name">
+                  Ollo Clip New
+                </div>
+                <div class="products__item-feature">
+                  Silver
+                </div>
+                <div class="products__item-price">
+                  $19.99
+                </div>
+              </div>
+              <div class="products__item wow zoomIn" data-wow-delay=".8s">
+                <div class="products__item-img">
+                  <img src="i/good-img7.jpg" alt="product7">
+                </div>
+                <div class="products__item-name">
+                  Apple TV 32GB
+                </div>
+                <div class="products__item-feature">
+                  Black
+                </div>
+                <div class="products__item-price">
+                  $49.99
+                </div>
+              </div>
+              <div class="products__item wow fadeInRight" data-wow-delay=".6s">
+                <div class="products__item-img">
+                  <img src="i/good-img8.jpg" alt="product8">
+                </div>
+                <div class="products__item-name">
+                  Fitbit Charge HR Heart Rate and Activity Tracker
+                </div>
+                <div class="products__item-feature">
+                  Black
+                </div>
+                <div class="products__item-price">
+                  $19.99
+                </div>
+              </div>
+            </div>
+            <!--/.products__row-3 -->
+            <div class="products__row">
+              <div class="products__item wow fadeInLeft" data-wow-delay=".8s">
+                <div class="products__item-img">
+                  <img src="i/good-img9.jpg" alt="product9">
+                </div>
+                <div class="products__item-name">
+                  Bose SoundLink On-Ear Headphones
+                </div>
+                <div class="products__item-feature">
+                  White
+                </div>
+                <div class="products__item-price">
+                  $119.99
+                </div>
+              </div>
+              <div class="products__item wow zoomIn" data-wow-delay=".8s">
+                <div class="products__item-img">
+                  <img src="i/good-img10.jpg" alt="product10">
+                </div>
+                <div class="products__item-name">
+                  Sonos Play-1 Wireless HiFi System
+                </div>
+                <div class="products__item-feature">
+                  Black
+                </div>
+                <div class="products__item-price">
+                  $99.99
+                </div>
+              </div>
+              <div class="products__item products__item-gray wow fadeInRight" data-wow-delay=".4s">
+                <div class="products__item-gray-img">
+                  <img src="i/good-img11.jpg" alt="product11">
+                </div>
+                <div class="products__item-gray-text">
+                  <div class="products__item-gray-name">
+                    Nest Learning Thermostat, 3rd Generation
+                  </div>
+                  <div class="products__item-gray-price">
+                    $49.99
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.products__row-4 -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End devices-->
+    <section id="delivery" class="section">
+      <div class="wrapper">
+        <div class="pagination__content">
+          <div class="pagination__bar wow zoomIn" data-wow-delay=".8s">
+            <a href="#" class="pagination__button pagination__button-left">&lt;</a>
+            <a href="#" class="pagination__button">1</a>
+            <a href="#" class="pagination__button">2</a>
+            <a href="#" class="pagination__button">3</a>
+            <a href="#" class="pagination__button">4</a>
+            <a href="#" class="pagination__button">5</a>
+            <a href="#" class="pagination__button">6</a>
+            <a href="#" class="pagination__button">7</a>
+            <a href="#" class="pagination__button">8</a>
+            <a href="#" class="pagination__button pagination__button-right">&gt;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End delivery-->
+    <section id="guarantee" class="section">
+      <div class="wrapper">
+        <div class="best__sellers">
+          <header class="best__sellers-header">
+            <h3 class="best__sellers-title">
+              Best Sellers
+            </h3>
+          </header>
+          <ul class="best__sellers-list">
+            <li class="best__sellers-item wow fadeInLeft" data-wow-delay=".2s">
+              <div class="sellers__img">
+                <img src="i/good-img12.jpg" alt="Beanie">
+              </div>
+              <div class="sellers__name">
+                Beanie
+              </div>
+              <div class="sellers__feature">
+                green
+              </div>
+              <div class="sellers__price">
+                £39.99
+                <span class="sellers__price-span">
+                  £29.99
+                </span>
+              </div>
+            </li>
+            <!--/.best__sellers-item-1-->
+            <li class="best__sellers-item wow fadeInDown" data-wow-delay=".4s">
+              <div class="sellers__img">
+                <img src="i/good-img13.jpg" alt="T-Shirt With a Print">
+              </div>
+              <div class="sellers__name">
+                T-Shirt With a Print
+              </div>
+              <div class="sellers__feature">
+                Dark Blue
+              </div>
+              <div class="sellers__price">
+                £29.99
+                <span class="sellers__price-span">
+                  £19.99
+                </span>
+              </div>
+            </li>
+            <!--/.best__sellers-item-2-->
+            <li class="best__sellers-item wow fadeInDown" data-wow-delay=".6s">
+              <div class="sellers__img">
+                <img src="i/good-img14.jpg" alt="Pile-Lined Hooded Jacket">
+              </div>
+              <div class="sellers__name">
+                Pile-Lined Hooded Jacket
+              </div>
+              <div class="sellers__feature">
+                Dark Blue
+              </div>
+              <div class="sellers__price">
+                £49.99
+                <span class="sellers__price-span">
+                  £39.99
+                </span>
+              </div>
+            </li>
+            <!--/.best__sellers-item-3-->
+            <li class="best__sellers-item wow fadeInRight" data-wow-delay=".8s">
+              <div class="sellers__img">
+                <img src="i/good-img15.jpg" alt="Trainers">
+              </div>
+              <div class="sellers__name">
+                Trainers
+              </div>
+              <div class="sellers__feature">
+                Space Grey
+              </div>
+              <div class="sellers__price">
+                £39.99
+                <span class="sellers__price-span">
+                  £29.99
+                </span>
+              </div>
+            </li>
+            <!--/.best__sellers-item-4-->
+          </ul>
+        </div>
+        <!--end block best__sellers -->
+      </div>
+      <!--end block wrapper -->
+    </section>
+    <!-- End guarantee-->
+    <section id="about" class="section">
+      <div class="wrapper">
+        <div class="about">
+          <header class="about__header">
+            <h2 class="about__title">
+              What Our Customers Have to Say
+            </h2>
+            <div class="about__title-desc">
+              Couple of Words About This Stories Section
+            </div>
+          </header>
+          <ul class="about__list">
+            <li class="about__item wow fadeInLeft">
+              <div class="about__avatar">
+                <div class="about__avatar-img">
+                  <img src="i/photo1.jpg" alt="Celia Fields">
+                </div>
+                <div class="about__head">
+                  <h3 class="about__name">
+                    Celia Fields
+                  </h3>
+                  <div class="about__post">
+                    UX Expert
+                  </div>
+                </div>
+              </div>
+              <div class="about__text">
+                <p>
+                  This I have produced as a scantling of Jack’s great eloquence and the force of his
+                  reasoning upon such abstruse matters.
+                </p>
+              </div>
+            </li>
+            <!--/.about__item-1 -->
+            <li class="about__item wow fadeInLeft" data-wow-delay=".2s">
+              <div class="about__avatar">
+                <div class="about__avatar-img">
+                  <img src="i/photo2.jpg" alt="Alexander Lee">
+                </div>
+                <div class="about__head">
+                  <h3 class="about__name">
+                    Alexander Lee
+                  </h3>
+                  <div class="about__post">
+                    Founder
+                  </div>
+                </div>
+              </div>
+              <div class="about__text">
+                <p>
+                  Looking cautiously round, to ascertain that they were not overheard, the two hags cowered
+                  nearer to the fire, and chuckled heartily.
+                </p>
+              </div>
+            </li>
+            <!--/.about__item-2 -->
+            <li class="about__item wow fadeInLeft" data-wow-delay=".4s">
+              <div class="about__avatar">
+                <div class="about__avatar-img">
+                  <img src="i/photo3.jpg" alt="Lenora Sandoval">
+                </div>
+                <div class="about__head">
+                  <h3 class="about__name">
+                    Lenora Sandoval
+                  </h3>
+                  <div class="about__post">
+                    Product Manager
+                  </div>
+                </div>
+              </div>
+              <div class="about__text">
+                <p>
+                  This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought
+                  of that before!' she said.
+                </p>
+              </div>
+            </li>
+            <!--/.about__item-3 -->
+          </ul>
+        </div>
+        <!--/.about-->
+      </div>
+    </section>
+    <!-- End about-->
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="footer__top">
+          <div class="footer__logo wow rotateIn">
+            <a href="#">
+            <img src="i/footer-logo.png" alt="footer-logo">
+            </a>
+          </div>
+          <div class="footer__menu wow rotateIn" data-wow-delay=".4s">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Home</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Shop</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">About Us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__socials wow rotateIn" data-wow-delay=".8s">
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item">
+                <a href="tweeter.com" class="footer__socials-link">
+                <img src="i/icons/icon-tweeter.png" class="footer__socials-icon" alt="tweeter">
+                </a>
+              </li>
+              <li class="footer__socils-item">
+                <a href="facebook.com" class="footer__socials-link">
+                <img src="i/icons/icon-facebook.png" class="footer__socials-icon" alt="facebook">
+                </a>
+              </li>
+              <li class="footer__socils-item">
+                <a href="#" class="footer__socials-link">
+                <span class="footer__socials-icon">G+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end block footer__top -->
+        <div class="footer__copyright">
+          <div class="footer__copyright-text">
+            <p>
+              She gave my mother such a turn, that I have always been convinced I am indebted to Miss
+              Betsey for having been born on a Friday.
+            </p>
+          </div>
+          <div class="footer__copyright-guarantee">
+            <ul class="footer__copyright-list">
+              <li class="footer__copyright-item">
+                Privacy Policy
+              </li>
+              <li class="footer__copyright-item">
+                Terms and Conditions
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end block footer__copyright -->
+      </div>
+    </footer>
+    <!-- End section footer-->
+    <!-- Modals -->
+    <div class="modal js-modal" id="js-login-modal">
+      <h2>
+        Modal Title
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aut officiis eaque itaque
+        repudiandae nemo, ea praesentium ullam tempora nisi numquam harum accusamus nihil, animi
+        iure minus quasi labore doloremque.
+      </p>
+      <a href="#" class="banner__btn js-modal-close">Close</a>
+    </div>
+    <div class="modal modal_lg js-modal" id="js-login-modal2">
+      <h2>
+        Modal Title
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aut officiis eaque itaque
+        repudiandae nemo, ea praesentium ullam tempora nisi numquam harum accusamus nihil, animi
+        iure minus quasi labore doloremque.
+      </p>
+      <a href="#" class="banner__btn js-modal-close">Close</a>
+    </div>
+    <!-- JS section -->
+    <script src="js/main.js">
+    </script>
+  </body>
+
+</html>

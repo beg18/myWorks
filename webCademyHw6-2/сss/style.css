@@ -1,0 +1,207 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/ptsans */
+@import "http://fonts.fontstorage.com/import/ptsans.css";
+/*
+	PT Sans, 400, 400 italic, 700, 700 italic
+*/
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family:'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.block {
+    border-radius: 10px;
+    background-color: rgb(243, 208, 13);
+    padding: 20px 0;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper {
+    width: 940px;
+    padding: 30px 30px 100px 30px;
+    margin: 0 auto;
+    background-color: #CEEEF9;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+h1 {
+    font-size: 32px;
+    color: rgb(36, 143, 210);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*========================================================
+HEADER
+==========================================================
+*/
+.header {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #00C900;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.logo {
+    width: 280px;
+    margin-right: 20px;
+    float: left;
+}
+.navigation {
+    width: 520px;
+    float: right;
+}
+/*========================================================
+/.HEADER
+==========================================================
+*/
+/*========================================================
+SIDEBAR
+  ========================================================
+*/
+.sidebar {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #00C900;
+    width: 300px;
+    padding: 30px 20px;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.widget {
+    background-color: #0090D4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.widget:last-child {
+    margin-bottom: 0;
+}
+.widget__header {
+    background-color: #89DDFF;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.widget__body {
+    background-color: #89DDFF;
+    border-radius: 10px;
+    padding: 45px 0;
+}
+
+/*========================================================
+/.SIDEBAR
+  ========================================================
+*/
+
+/*========================================================
+MAIN CONTENT
+  ========================================================
+*/
+.main__content {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #00C900;
+    width: 540px;
+    padding: 20px;
+    float: right;
+}
+.article {
+    overflow: hidden;
+    background-color: #69F392;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 45px;
+}
+.article:last-child {
+    margin-bottom: 35px;
+}
+.article__header {
+    margin-bottom: 20px;
+}
+.article__text {
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+.article__comment {
+    width: 160px;
+    float: left;
+}
+.article__readmore {
+    width: 160px;
+    float: right;
+}
+/*========================================================
+MAIN CONTENT
+ =========================================================
+*/
+/*
+==========================================================
+PAGINATION
+==========================================================
+*/
+.pagination {
+    border-radius: 10px;
+    background-color: rgb(121, 104, 9);
+    width: 210px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*
+==========================================================
+PAGINATION
+==========================================================
+*/
+.circle__btn {
+    border-radius: 50%;
+    background-color: rgb(218, 48, 108);
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

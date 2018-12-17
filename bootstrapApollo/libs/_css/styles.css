@@ -1,0 +1,167 @@
+blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, p, pre, td, textarea, th, ul{
+      margin: 0;
+      padding: 0;
+}
+
+table{
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+abbr, fieldset, img{
+      border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var{
+      font-style: normal;
+      font-weight: 400;
+}
+
+ul li{
+      list-style: none;
+}
+
+caption, th{
+      text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6{
+      font-size: 100%;
+      font-weight: 400;
+}
+
+sup{
+      vertical-align: text-top;
+}
+
+sub{
+      vertical-align: text-bottom;
+}
+
+input, select, textarea{
+      font: inherit inherit inherit;
+}
+
+legend{
+      color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{
+      display: block;
+}
+
+img{
+      max-width: 100%;
+      height: auto;
+}
+
+.wrapper{
+      max-width: 1280px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0 auto;
+}
+.block {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #81D4FA;
+  border: 1px solid #3F51B5;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+/*.debug{
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+}*/
+
+.debug > div{
+      height: inherit;
+      max-width: 1280px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0 auto;
+}
+
+.debug > div > div{
+      height: inherit;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-left: -16px;
+      margin-right: -16px;
+}
+
+.debug > div > div > div{
+      box-sizing: border-box;
+      margin-left: 16px;
+      margin-right: 16px;
+      word-wrap: break-word;
+      width: calc(8.333333333333334% - 32px);
+      height: inherit;
+      outline: #ff0 solid 1px;
+      background: rgba(0, 0, 0, .5);
+}
+
+nav {
+    background-color: #353537;
+    padding: 20px 0;
+    margin-bottom: 2px;
+}
+.slider {
+    background-color: #13669C;
+    padding: 50px 0;
+    margin-bottom: 2px;
+}
+.line {
+    border-top: 3px solid #E8EFF5;
+    margin: 10px 0 15px;
+}
+footer {
+   padding: 50px 0;
+   background-color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

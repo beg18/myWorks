@@ -1,0 +1,26 @@
+@import "params";
+
+
+@mixin clear {
+    margin: 0;
+    padding: 0;
+}
+@mixin clear-list {
+    @include clear;
+   list-style-type: none;
+}
+@mixin flex-center ($dir: column){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+@mixin package-color($color: $yellow){
+   & .tile__cost {
+      border-bottom-color: $color !important;
+    }
+  & .item__value {
+     color: $color;
+  }
+}
